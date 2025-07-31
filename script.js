@@ -1,13 +1,13 @@
 // *** Global Variables ***
 const gameBoxNode = document.querySelector("#game-box");
 
-// const ballNode = document.createElement("div"); // se crea la pelotita
-// ballNode.id = "ball"; // se asigna un id a la pelotita (para CSS)
-// gameBoxNode.append(ballNode); // se añade la pelotita a la caja de juego
+// const ballNode = document.createElement("div"); // the ball node is created
+// ballNode.id = "ball"; // we assign an id to the node, just for styles
+// gameBoxNode.append(ballNode); // we add the node to the game box
 
-// const paddleNode = document.createElement("div"); // se crea la paleta
-// paddleNode.id = "paddle"; // se asigna un id a la paleta (para CSS)
-// gameBoxNode.append(paddleNode); // se añade la pelotita a la caja de juego
+// const paddleNode = document.createElement("div"); // the paddle node is created
+// paddleNode.id = "paddle"; // we assign an id to the node, just for styles
+// gameBoxNode.append(paddleNode); // we add the node to the game box
 
 
 

@@ -3,19 +3,21 @@ body {
 }
 
 .container {
+  /* this is only to center the game box */
   display: flex;
   justify-content: center;
-  /* flexbox para centrar el game-box en la pantalla */
 }
 
 #game-box {
+  /* The game box will have position relative only so we can position elements inside related to the game box (using position absolute) */
   position: relative; 
-  /* La game-box siempre debe tener posición relativa. De esta manera los elementos hijos (la pelota y la paleta) se podrán posicionar en relación a él (posición absoluta) */
+
   background-color: black;
   width: 400px;
   height: 600px;
+
+  /* this allows elements to visually exist only inside the game box. We can comment and uncomment this line to see how it affects elements showing outside of the game box */
   /* overflow: hidden;  */
-  /* overflow hidden previene que los elementos salgan de la pantalla visualmente*/
 }
 
 #ball {
@@ -23,12 +25,15 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 10px;
+
+  /* position: absolute allows to to access properties top and left to position the element (ball) relative to the parent (game box) */
   position: absolute;
-  /* position: absolute nos permite ajustar manualmente la posición del elemento relativo al padre (game-box). Ver propiedades top y left abajo*/
+  
+  /* top means the distance of the element (ball) from the top side of the parent (game box)*/
   top: 30px; 
-  /* top es la distancia entre el lado superior del contenedor padre (game-box) y el lado superior de la pelotita */
+
+  /* left means the distance of the element (ball) from the left side of the parent (game box) */
   left: 30px; 
-  /* left es la distancia entre el lado izquierdo del contenedor padre (game-box) y el lado izquierdo de la pelotita */
 }
 
 #paddle {
